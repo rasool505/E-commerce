@@ -14,4 +14,4 @@ This is a full-stack e-commerce project built using React for the frontend and E
 - Secure payment integration
 - User authentication and management
 #
-##© 2025 Rasool Hussein. All Rights Reserved.
+## © 2025 Rasool Hussein. All Rights Reserved.
