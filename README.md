@@ -1,2 +1,17 @@
-# E-commerce
-A self-built e-commerce platform that allows users to browse products, manage their cart, and complete secure transactions. Developed using React for the frontend and Express.js with MongoDB for the backend, this project demonstrates my full-stack development skills in creating a complete e-commerce solution.
+# E-commerce Project
+
+This is a full-stack e-commerce project built using React for the frontend and Express.js for the backend.
+
+## Technologies Used
+- Frontend: React
+- Backend: Express.js
+- Database: MongoDB
+- Authentication: JWT (JSON Web Tokens)
+
+## Features
+- Browse products
+- Add to cart and checkout
+- Secure payment integration
+- User authentication and management
+#
+##© 2025 Rasool Hussein. All Rights Reserved.
