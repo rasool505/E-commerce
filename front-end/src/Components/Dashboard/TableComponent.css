@@ -1,0 +1,20 @@
+.main-table{
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+}
+
+.main-table, th, tr, td{
+    border: 2px solid white;
+    text-align: center;
+    height: fit-content;
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    color: var(--secondary-text-clr);
+}
+
+tr:hover{
+    color: var(--accent-clr);
+}

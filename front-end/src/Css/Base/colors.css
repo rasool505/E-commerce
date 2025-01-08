@@ -1,0 +1,18 @@
+:root{
+    --bg-main:#ffffff;
+    --dark: #282a35;
+    --dark-blue: #3532ae;
+    --aqua: #01c2fb;
+    --light-shadow: #c3c6d1;
+    --darks-lategray: #2d4362;
+    --error: #ff6978;
+    --select-clr: #e071ff;
+    --border-clr: #676767;
+    
+    --base-clr: #11121a;
+    --line-clr: #42434a;
+    --hover-clr: #222533;
+    --text-clr: #e6e6ef;
+    --accent-clr: #5e63ff;
+    --secondary-text-clr: #b0b3c1;
+}
