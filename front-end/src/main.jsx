@@ -8,13 +8,17 @@ import "./Css/Components/form.css";
 import "./Css/Base/media.css";
 import SideBarIsOpen from './Context/SideBarIsOpen';
 import WindowSize from './Context/WindowSize.jsx';
+import SearchCtx from './Context/SearchCtx.jsx';
+import i18n from './utils/i18n.js';
 
 createRoot(document.getElementById('root')).render(
     <WindowSize>
     <SideBarIsOpen>
-    <HashRouter>
+    <SearchCtx>
+    <BrowserRouter>
         <App />
-    </HashRouter>
+    </BrowserRouter>
+    </SearchCtx>
     </SideBarIsOpen>
     </WindowSize>
 )

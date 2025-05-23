@@ -9,7 +9,7 @@ export default function Dashboard() {
 
   return ( <main className="conatiner-dashboard">
       <NavBar/>
-        <div className="content-dashboard w-100 min-vh-100 d-flex justify-content-start align-items-center flex-row">
+        <div className="content-dashboard w-100 min-vh-100 d-flex justify-content-start align-items-start flex-row">
         <SideBar/>
         <Outlet/>
         </div>

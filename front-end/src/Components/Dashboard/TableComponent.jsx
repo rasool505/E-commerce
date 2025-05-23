@@ -42,8 +42,8 @@ export default function TableComponent({headers, data, currentUser, handleDelete
             ? item[key.key].length
             : key.key === "user" &&  item[key.key] !== null
             ? item[key.key].name
-            : key.key === "location" &&  item["user"].location !== null
-            ? item["user"].location
+            : key.key === "location" &&  item["user"]?.location !== null
+            ? item["user"]?.location || "No location"
             : key.key === "assignedTo" &&  item[key.key] !== null
             ? item[key.key].name
             : key.key === "image"

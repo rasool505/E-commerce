@@ -1,18 +1,24 @@
 import "./Footer.css";
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+  const { t, i18n } = useTranslation();
+
   return (
     <footer className="footer">
-        <p>© 2024 Rasool Hussein. All Rights Reserved.</p>
+        <p>{t('rights1')}</p>
         <a href="https://t.me/CodeHub4" target="_blank">Telegram</a>
           <hr />
-        <p>All content provided on this website is for informational purposes only.
+        <p>{t('rights2')}
           <br />
-          The owner is not responsible for any misuse of the content.</p>
+          {t('rights3')}
+        </p>
           <hr />
-        <p>This project is protected by copyright laws.
+        <p>
+        {t('rights4')}
           <br />
-          Unauthorized use, distribution, or reproduction is prohibited.</p>
+          {t('rights5')}
+        </p>
     </footer>
   )
 }

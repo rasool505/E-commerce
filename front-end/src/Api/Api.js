@@ -28,6 +28,9 @@ export const allDeliveryCartsURL = "/all/delivery";
 export const cartDeliveredURL = "/carts/delivered";
 export const cartCancelledURL = "/carts/cancelled";
 
+// Search URL
+export const searchURL = "/search/products";
+
 /**
  *  Auth No Authorization,
  *  Products:

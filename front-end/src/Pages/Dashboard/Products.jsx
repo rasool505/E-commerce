@@ -32,7 +32,7 @@ export default function Products() {
 
 
   return (
-    <main className="w-100 vh-100 d-flex justify-content-center container-section">
+    <main className="w-100 min-vh-100 d-flex justify-content-center container-section">
       <TableComponent headers={headers} data={products} handleDelete={handleDelete}/>
     </main>
   )

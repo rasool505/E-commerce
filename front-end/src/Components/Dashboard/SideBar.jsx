@@ -2,12 +2,14 @@ import "./SideBar.css";
 import {links} from './SideLink';
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faAngleUp, faAnglesLeft} from "@fortawesome/free-solid-svg-icons";
+import {faAngleUp, faAnglesLeft, faRightFromBracket} from "@fortawesome/free-solid-svg-icons";
 import {useEffect, useState } from "react";
 import React from "react";
 import Cookie from 'cookie-universal';
 import { Axios } from "../../Api/AxiosCreate";
 import { userURL } from "../../Api/Api";
+import { Button } from "react-bootstrap";
+
 
 
 export default function SideBar() {
@@ -74,6 +76,13 @@ export default function SideBar() {
             </ul>
   </React.Fragment>)))
 
+function handleLogOut(){
+  cookie.remove("accessToken");
+  cookie.remove("user");
+  localStorage.removeItem('cart');
+  window.location.pathname="/login";
+}
+
   return (
         <nav id="sidebar" style={{width:  open ? "250px" : "50px"}}>
           <ul>
@@ -83,6 +92,7 @@ export default function SideBar() {
             </li>
             {listShow}
           </ul>
+          <Button onClick={handleLogOut} className="w-75 btn btn-primary link-nav btn-side" ><FontAwesomeIcon icon={faRightFromBracket} /></Button>
         </nav>
   )
 }

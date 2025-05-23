@@ -30,7 +30,7 @@ export default function Ads() {
   ];
 
   return (
-    <main className="w-100 vh-100 d-flex justify-content-center container-section">
+    <main className="w-100 min-vh-100 d-flex justify-content-center container-section">
       <TableComponent headers={headers} data={ads} handleDelete={handleDelete}/>
     </main>
   )

@@ -159,9 +159,8 @@ export const cartIsCancelled = async (req, res) => {
                 amountOfCarts: userDelivery.amountOfCarts - 1
             }
         },{new: true});
-
         cart = await Cart.findByIdAndUpdate(req.params.id, {
-           $set: {
+        $set: {
             status: "cancelled",
             assignedTo: null
             }
@@ -242,11 +241,13 @@ export const deleteCart = async (req, res)=>{
             return res.status(404).json({message: "the cart is not found."});
 
         const userDelivery = await User.findById(cart.assignedTo);
+        if(userDelivery !== null && userDelivery.length != 0){
         await User.findByIdAndUpdate(cart.assignedTo, {
             $set: {
                 amountOfCarts: userDelivery.amountOfCarts - 1,
             }
         },{new: true});
+        }
 
         cart = await Cart.findByIdAndDelete(req.params.id);
         res.status(200).json({message: "the cart have been deleted successfully."})

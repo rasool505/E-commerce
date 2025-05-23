@@ -1,8 +1,7 @@
 #sidebar{
     box-sizing: border-box;
-    height: 120vh;
+    min-height: 120vh;
     width: 250px;
-    /* background-color: var(--bg-main); */
     background-color: var(--base-clr);
     border-right: 1px solid var(--border-clr);
     cursor: pointer;
@@ -77,4 +76,19 @@
 }
 .active{
     color: var(--accent-clr) !important;
+}
+
+.btn-side{
+    width: 75% !important;
+    margin: 0 0 10% 10% !important;
+    padding: 10px !important;
+    border-radius: 5px !important;
+    background-color: #b91515 !important;
+    color: #fff !important;
+    font-weight: 600 !important;
+    border: none !important;
+    transition: all 0.3s ease-in-out !important;
+    cursor: pointer !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden;
 }

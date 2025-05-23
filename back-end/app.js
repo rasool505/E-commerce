@@ -11,6 +11,7 @@ import productRouter from "./routes/product.js";
 import cartsRouter from "./routes/carts.js";
 import CategoriesRouter from "./routes/categories.js";
 import AdsRouter from "./routes/ads.js";
+import searchRouter from "./routes/search.js";
 import path, { dirname } from 'path';
 import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
@@ -44,6 +45,7 @@ app.use("/api/products", productRouter);
 app.use("/api/carts", cartsRouter);
 app.use("/api/categories", CategoriesRouter);
 app.use("/api/ads", AdsRouter);
+app.use("/api/search/products", searchRouter);
 
 // Error middlawere
 app.use(notFound);

@@ -60,3 +60,7 @@
     flex-flow: row wrap;
     gap: 30px;
   }
+
+  #NotiflixNotifyWrap {
+    z-index: 9999999 !important;
+  }

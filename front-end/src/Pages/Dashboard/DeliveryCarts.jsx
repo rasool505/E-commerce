@@ -24,7 +24,6 @@ export default function DeliveryCarts() {
   //get all Carts
   useEffect(()=>{
     if (user && user._id) {
-        console.log(user._id)
     Axios.get(`${cartsURL}/${allDeliveryCartsURL}/${user._id}`)
     .then(data=>{setCarts(data.data)})
     .catch((err)=>{
@@ -33,8 +32,6 @@ export default function DeliveryCarts() {
     })
     }
   }, [user, reload]);
-
-  console.log(carts)
 
   // delivered cart
   async function handleDelivered(id){
@@ -81,11 +78,11 @@ const productShow = carts.map((item, i)=>(
             <td key={index}>
              {
                 key.key === "title"
-                ? product["productId"].title
+                ? product["productId"]?.title
                 : key.key === "price"
-                ? product["productId"].price
+                ? product["productId"]?.price
                 : key.key === "discount"
-                ? product["productId"].discount
+                ? product["productId"]?.discount
                 : key.key === "quantity"
                 && product['quantity']
              }   
